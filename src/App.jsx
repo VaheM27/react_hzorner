@@ -18,7 +18,7 @@ function App() {
     axios.post('http://localhost:3000/posts',newData).then(()=>getData())
     setData([...data,newData])
   }
-  const [data,setData]= useState()
+  const [data,setData]= useState([])
 
   const getData = () =>{
     axios('http://localhost:3000/posts').then(res=>setData(res.data))
