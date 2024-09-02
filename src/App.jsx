@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import { object, string } from 'yup';
 import axios from 'axios';
+import { nanoid } from 'nanoid';
+import { object, string } from 'yup';
 
 import './App.scss';
-import { nanoid } from 'nanoid';
 
 function App() {
   const handleReg = (value) =>{
