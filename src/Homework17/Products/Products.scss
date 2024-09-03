@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+
+    .item {
+        width: 200px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: yellowgreen;
+        border-radius: 20px;
+        padding: 10px;
+        text-decoration: none;
+        
+
+        p {
+            font-size: 15px;
+            color:blue;
+        }
+        img {
+            width: 150px;
+            height: 200px;
+            object-fit: contain;
+        }
+
+    }
+}

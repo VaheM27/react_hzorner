@@ -1,0 +1,35 @@
+.product {
+    background-color: rgb(241, 106, 106);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+
+    img {
+        width: 200px;
+        height: 250px;
+        object-fit: contain;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        padding: 15px 30px;
+        background-color: yellow;
+        border-radius: 20px;
+        color: black;
+    }
+
+    button {
+        padding: 15px 30px;
+        background-color: orangered;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
