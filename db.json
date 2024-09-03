@@ -1,0 +1,6 @@
+{
+    "posts": [
+      { "name": "1", "email": "a title", "mark": 100 },
+      { "name": "2", "email": "another title", "mark": 200 }
+    ]
+  }
