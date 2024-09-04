@@ -1,13 +1,14 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 
+const Show = (e) => {
+  const { id } = useParams();
+  console.log(id);
 
-const Show = (e) =>{
-    
-    return(
-        <div>
-            <p>hello</p>
-        </div>
-    )
-}
+  return (
+    <div>
+      <p>hello</p>
+    </div>
+  );
+};
 
-export default Show
+export default Show;

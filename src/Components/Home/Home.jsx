@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import axios from "axios"
+import ROUTES from "../../Routes"
+
 
 import './Home.scss'
-import { Link, NavLink } from "react-router-dom"
-import ROUTES from "../../Routes"
 
 
 
