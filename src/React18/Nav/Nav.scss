@@ -1,0 +1,30 @@
+nav {
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    opacity: .8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    background-color: rgb(59, 150, 59);
+    padding: 10px;
+
+    a {
+        font-size: 25px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        color: rgb(103, 197, 103);
+    }
+}
+
+
+.navbar a.active {
+    transform: scale(1.1);
+    border-bottom: 5px solid rgb(43, 79, 43);
+    border-top: 5px solid rgb(43, 79, 43);
+}

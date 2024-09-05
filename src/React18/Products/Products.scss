@@ -1,0 +1,48 @@
+.mainPro {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    background-color: antiquewhite;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        max-width: 200px;
+        width: 100%;
+        padding: 15px 0px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+
+    .boxPro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+        background-color: rgb(59, 150, 59);
+        max-width: 500px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 50px auto;
+
+        img {
+            max-width: 300px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 20px;
+            text-transform: capitalize;
+            text-align: center;
+            color: antiquewhite;
+        }
+    }
+
+    .boxPro:hover {
+        transform: scale(1.1);
+    }
+}
