@@ -1,0 +1,31 @@
+.users{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    .userCard{
+        border: 3px solid rgb(55, 55, 185);
+        border-radius: 35px;
+        max-width: 350px;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        p{
+            font-size: 20px;
+            &:nth-child(1){
+                color: red;
+                font-weight: 800;
+                cursor: pointer;
+            }
+            &:nth-child(2){
+                font-weight: 800;
+            }
+            &:nth-child(3){
+                font-weight: 600;
+            }
+            &:nth-child(4){
+                font-weight: 500;
+            }
+        }
+    }
+}
