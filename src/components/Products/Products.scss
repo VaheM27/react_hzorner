@@ -16,6 +16,7 @@
     padding: 15px 0px;
     border-radius: 30px;
     font-size: 20px;
+    background-color: antiquewhite;
   }
 
   .boxPro {
@@ -24,6 +25,7 @@
     flex-direction: column;
     row-gap: 30px;
     background-color: rgb(59, 150, 59);
+    opacity: .8;
     max-width: 500px;
     height: max(500px);
     width: 100%;
