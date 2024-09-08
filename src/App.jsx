@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <div>
         <h1 style={{ color: "red" }}>Kima</h1>
+        <h1 style={{ color: "red" }}>Manvel</h1>
         <h1 style={{ color: "red" }}>Hayk</h1>
       </div>
     </div>
