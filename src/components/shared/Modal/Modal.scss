@@ -1,0 +1,40 @@
+.Modal {
+  position: fixed;
+  inset: 0;
+  background: rgba($color: #000000, $alpha: 0.8);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  .ModalContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+
+    h1 {
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 500;
+    }
+
+    .btns {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+
+      button {
+        padding: 15px 30px;
+        font-size: 20px;
+        background-color: #09523a;
+        color: #fff;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
