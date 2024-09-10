@@ -3,3 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.App {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  gap: 20px;
+  padding: 10px;
+  border: 2px #605151 solid;
+  input {
+    padding: 10px;
+  }
+  button {
+    background-color: blue;
+    padding: 10px;
+    color: white;
+  }
+}
+.second {
+  background-color: #f1f1f1;
+  width: 400px;
+  margin-top: 20px;
+  padding: 10px;
+  overflow: scroll;
+}
