@@ -1,0 +1,39 @@
+.Modal{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    background-color: blueviolet;
+    opacity: 0.8;
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    z-index: 99;
+    .ModalContent{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 60px;
+       
+       height: 200px;
+        
+    
+     .btn{
+        display: flex;
+        align-items: center;
+        column-gap:20px ;
+        
+    
+        button{
+            padding:15px 30px;
+            font-size: 20px;
+            background-color: blueviolet;
+            border-radius: 30px;
+            border: none;
+        }
+     }   
+    }
+    }
