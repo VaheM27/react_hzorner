@@ -1,0 +1,5 @@
+export const ADD = 'add'
+export const SHUFFLE = 'shuffle'
+export const ADDDEV = 'addDev'
+export const CHANGEUSER = 'changeuser'
+export const ADDAGE = 'addAge'
