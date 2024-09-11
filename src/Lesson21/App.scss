@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: rgba($color: #c70f0f, $alpha: 0.8);
+  padding: 50px;
+
+  code {
+    white-space: pre-wrap;
+    background-color: #000;
+    color: forestgreen;
+    border-radius: 30px;
+    font-size: 22px;
+    width: 1300px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+  }
+}

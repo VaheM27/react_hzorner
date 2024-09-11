@@ -17,7 +17,7 @@ function reducer(state = initialValue, action) {
     case PLUS:
       return state + action.payload;
     case PUSH:
-      return {...state, data: [...state.data, 5]};
+      return { ...state, data: [...state.data, 5] };
     case SORT:
       return toSort(state.data, action.payload);
     case "minus":
