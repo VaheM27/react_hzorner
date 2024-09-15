@@ -9,7 +9,6 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // background-color: rgb(141, 141, 169);
         width: 90%;
         margin: auto;
 
@@ -59,6 +58,8 @@ nav {
             align-items: center;
 
             p {
+                display: flex;
+                gap: 5px;
                 font-size: 20px;
                 color: white;
                 cursor: pointer;

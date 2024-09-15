@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Logo from "../../assets/images/NavBar/sport-logo.png"
-import ArmeniaFlag from "../../assets/images/NavBar/armenia-flag.png"
+import { ArmeniaFlag, Logo } from '../Images'
 
 import "./NavBar.scss"
 
