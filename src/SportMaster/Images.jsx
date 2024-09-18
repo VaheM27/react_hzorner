@@ -9,7 +9,9 @@ import kappa from "../assets/images/Section1/kappa-gray.png"
 import demix from "../assets/images/Section1/demix-gray.png"
 import outventure from "../assets/images/Section1/outventure-gray.png"
 
+import sportiHagust from "../assets/images/Section2/sporti-hagust.webp"
+import turizm from "../assets/images/Section2/turizm.jpg"
+import boots from "../assets/images/Section2/sport-boots.jpg"
+import vazq from "../assets/images/Section2/vazq.jpg"
 
-
-
-export { sec1img, ArmeniaFlag, Logo, fila, puma, columbia, kappa, demix, outventure }
+export { sec1img, ArmeniaFlag, Logo, fila, puma, columbia, kappa, demix, outventure, sportiHagust, turizm, boots, vazq }

@@ -1,0 +1,69 @@
+.section2 {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .top2 {
+        display: flex;
+        max-width: 1600px;
+        width: 100%;
+        gap: 30px;
+        padding-top: 50px;
+
+        span {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .sportiHagust,
+        .vazq {
+            width: 795px;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            span {
+                position: absolute;
+                bottom: 30px;
+                left: 25px;
+            }
+        }
+
+        .top2right {
+            display: grid;
+            grid-template-columns: repeat(2, 382px);
+            column-gap: 30px;
+            row-gap: 2px;
+
+            .turizm-sport {
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                span {
+                    position: absolute;
+                    bottom: 30px;
+                    left: 25px;
+                }
+            }
+
+        }
+    }
+}

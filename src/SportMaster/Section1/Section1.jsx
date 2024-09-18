@@ -5,7 +5,7 @@ import "./Section1.scss"
 
 const Section1 = () => {
     return (
-        <section>
+        <section className='section1'>
             <img src={sec1img} alt="sec1img" style={{ width: "100%" }} />
             <div className="bottom">
                 <img src={fila} alt="fila" />
