@@ -1,46 +1,26 @@
-import { useReducer, useState } from "react";
-import reducer, { initialState } from "./reducer.js";
-import { ADD, SHUFFLE, DEVELOPER } from "./actionType.js";
-import { addNumber, remove, setAge, shuffle, update } from "./functions";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ROUTES from "./Routes";
+import { Layouts } from "./Layouts/Layouts";
+import { About, Contact, Home, Products, Error, Product } from "./pages";
+
 import "./App.css";
 
 function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  let randomNumber = Math.floor(Math.random() * (999 - 100 + 1)) + 100;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const value = e.target.elements.username.value.trim();
-    if (value !== "") {
-      dispatch({ type: DEVELOPER, payload: value });
-      e.target.reset();
-    }
-  };
-
   return (
-    <div className="App">
-      <div className="first">
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="username"> Enter username</label>
-          <input type="text" id="username" name="username" />
-
-          <button type="submit"> Add DEveloper</button>
-          <button onClick={() => shuffle(dispatch)}> Shuffle Array</button>
-          <button onClick={() => addNumber(dispatch, randomNumber)}>
-            Add number
-          </button>
-          <button onClick={() => remove(dispatch)}>Remove Single Digits</button>
-          <button onClick={() => update(dispatch)}>Change User</button>
-          <button onClick={() => setAge(dispatch)}>Add age</button>
-        </form>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path={ROUTES.HOME} element={<Layouts />}>
+            <Route index element={<Home />} />
+            <Route path={ROUTES.ABOUT} element={<About />} />
+            <Route path={ROUTES.CONTACT} element={<Contact />} />
+            <Route path={ROUTES.PRODUCT} element={<Product />} />
+            <Route path={ROUTES.PRODUCTS} element={<Products />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
       </div>
-      <div className="second">
-        <h2>OUTPUT</h2>
-        <p>developers {JSON.stringify(state.developers)}</p>
-        <p>user {JSON.stringify(state.user)}</p>
-        <p>arr {JSON.stringify(state.arr)}</p>
-      </div>
-    </div>
+    </Router>
   );
 }
 
