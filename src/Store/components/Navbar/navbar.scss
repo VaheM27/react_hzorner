@@ -1,0 +1,17 @@
+nav {
+    padding: 20px;
+    background-color: brown;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+        list-style: none;
+            a{
+                color: white;
+                font-size: 40px;
+                text-decoration: none;
+            }
+    }
+}
