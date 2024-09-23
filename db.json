@@ -1,9 +1,84 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": "1",
-      "title": "a title",
-      "views": 100
+      "id": 1,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 999.99,
+      "stock": 50,
+      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08454578.png"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "category": "Electronics",
+      "price": 599.99,
+      "stock": 100,
+      "image": "https://allcell.am/wp-content/uploads/2023/09/nnnnn-300x300.webp"
+    },
+    {
+      "id": 3,
+      "name": "Headphones",
+      "category": "Accessories",
+      "price": 199.99,
+      "stock": 200,
+      "image": "https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha"
+    },
+    {
+      "id": 4,
+      "name": "Keyboard",
+      "category": "Accessories",
+      "price": 49.99,
+      "stock": 150,
+      "image": "https://m.media-amazon.com/images/I/71pHnBCAqmL.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Coffee Maker",
+      "category": "Appliances",
+      "price": 89.99,
+      "stock": 80,
+      "image": "https://www.foodandwine.com/thmb/LnTHkm1k-I5P1jqH-0rLZidwgjE=/fit-in/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-Breville_BaristaPro_BES878BSS_9-0794-Russell-Kilgore-3x2-b21bb7fdbc4246a78d036318190d2c52.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Microwave",
+      "category": "Appliances",
+      "price": 129.99,
+      "stock": 60,
+      "image": "https://hips.hearstapps.com/hmg-prod/images/wu4719microwavewithgrill-01-pcm155026-1574424415.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Desk Chair",
+      "category": "Furniture",
+      "price": 149.99,
+      "stock": 40,
+      "image": "https://img-us.aosomcdn.com/thumbnail/100/n0/product/2023/05/04/2HF98a187e52eb325.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Office Desk",
+      "category": "Furniture",
+      "price": 299.99,
+      "stock": 30,
+      "image": "https://i5.walmartimages.com/seo/Tribesigns-70-8-Large-Executive-Office-Desk-with-Lateral-File-Cabinet-L-Shaped-Computer-Desk-with-Drawers-and-Storage-Home-Office-Furniture-Sets_3b7d3c5c-1a64-41fe-91e6-6efbe15795ed.f1ae63aed0821067c87846af02f689fd.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "LED TV",
+      "category": "Electronics",
+      "price": 399.99,
+      "stock": 25,
+      "image": "https://m.media-amazon.com/images/I/71jU54Q6ChL.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Smartwatch",
+      "category": "Electronics",
+      "price": 249.99,
+      "stock": 75,
+      "image": "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad/images/S300847346_1?1725018393"
     }
   ]
 }

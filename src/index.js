@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./Lesson19/App";
+import App from "./Lesson20/App";
 
 import "./index.scss";
 

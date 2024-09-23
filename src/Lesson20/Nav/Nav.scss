@@ -1,0 +1,16 @@
+.Nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+    padding: 25px;
+    gap: 40px;
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+    }
+}
