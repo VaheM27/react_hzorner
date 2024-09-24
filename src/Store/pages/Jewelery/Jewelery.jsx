@@ -3,16 +3,26 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const Jewelery = () => {
-  const [option, setOption] = useState('');
+  const [data, setData] = useState([]);
+
+  const getData = () => {
+    axios("https://fakestoreapi.com/products").then((res) => setData(res.data));
+  };
 
   useEffect(() => {
-    axios(`https://fakestoreapi.com/products`)
+    getData();
   }, []);
 
   return (
     <div>
       <h1>Jewelery</h1>
     </div>
+
+    // {data.map((item) => {
+    //   return (
+    //     <p>{item.title}</p>
+    //   )
+    // })}
   );
 };
 
