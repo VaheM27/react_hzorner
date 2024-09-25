@@ -25,8 +25,7 @@ function App() {
   };
 
   const validationSchema = object({
-    name: string()
-      .required("Please write your car name"),
+    name: string().required("Please write your car name"),
     email: string().required(),
     mark: string().required(),
     img: string().required(),
@@ -55,11 +54,7 @@ function App() {
           return (
             <Form>
               <div className="inputBox">
-                <Field
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                />
+                <Field type="text" name="name" placeholder="Name" />
                 <ErrorMessage component="span" name="name" />
               </div>
               <div className="inputBox">
@@ -70,7 +65,9 @@ function App() {
                 <Field type="text" name="mark" placeholder="Mark" />
                 <ErrorMessage component="span" name="mark" />
               </div>
-              <Field type = 'text' name = 'img' placeholder='img'><img src="" alt="" /></Field>
+              <Field type="text" name="img" placeholder="img">
+                <img src="" alt="" />
+              </Field>
               <ErrorMessage component="span" name="img" />
               <button type="submit" disabled={!formik.isValid}>
                 Submit
@@ -111,4 +108,3 @@ function App() {
 }
 
 export default App;
-
