@@ -1,0 +1,25 @@
+.slick-next:before,
+.slick-prev:before {
+  color: green;
+}
+
+
+.slick-slider{
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    background-color: rebeccapurple;
+    border-radius: 25px;
+    
+
+}
+
+.slick-next:before, .slick-prev:before{
+    color: rebeccapurple !important;
+    font-size: 45px !important;
+    
+}
+
+.slick-prev{
+    left: -50px !important;
+}
