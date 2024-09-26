@@ -1,0 +1,30 @@
+.man{
+    display: flex;
+    flex-direction: column;
+    p{
+        background-color: rgb(31, 202, 214);
+        padding: 25px;
+        border-radius: 25px;
+        font-size: 25px;
+        font-weight: 900;
+        max-width: fit-content;
+        color: black;
+    }
+    .buttonsDiv{
+        border: 2px solid;
+        padding: 25px;
+        background-color: rgb(31, 202, 214);
+        border-radius: 25px;
+        display: flex;
+        column-gap: 25px;
+        button{
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+    }
+}
