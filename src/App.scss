@@ -4,28 +4,20 @@
   box-sizing: border-box;
 }
 
-
-
-.App{
-  form{
+.App {
+  form {
     max-width: 300px;
     display: flex;
     flex-direction: column;
     margin: auto;
     justify-content: center;
-    input{
+    input {
       padding: 15px 30px;
       border-radius: 30px;
     }
-    button{
+    button {
       padding: 15px 30px;
       border-radius: 30px;
     }
-    
-
   }
-
-
 }
-
-
