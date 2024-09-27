@@ -1,28 +1,25 @@
-import React, { useState } from 'react'
+import { useState } from "react";
 
 const useArray = ({ initialValue }) => {
-    const [delSecElm, setDelSecElm] = useState(initialValue)
-    const [add, setAdd] = useState(initialValue)
-    const [changeSec, setChangeSec] = useState(initialValue)
+  const [add, setAdd] = useState(initialValue);
 
-    const deleteSecondElement = () => {
-        let newArr = [...delSecElm]
-        newArr.splice(1, 1)
-        setDelSecElm(newArr)
-    }
+  const deleteSecondElement = () => {
+    let newArr = [...add];
+    newArr.splice(1, 1);
+    setAdd(newArr);
+  };
 
-    const addFuntion = () => {
-        setAdd([...add].shift(7))
-    }
+  const addFuntion = () => {
+    setAdd([...add, Math.round(Math.random() * 5)]);
+  };
 
-    const changeSecElm = () => {
-        let newArray = [...changeSec]
-        newArray[1] = 9
-        setChangeSec(newArray)
-    }
+  const changeSecElm = () => {
+    let newArray = [...add];
+    newArray[1] = 9;
+    setAdd(newArray);
+  };
 
+  return [add, deleteSecondElement, addFuntion, changeSecElm];
+};
 
-    return [delSecElm, deleteSecondElement, add, addFuntion, changeSec, changeSecElm]
-}
-
-export default useArray
+export default useArray;
