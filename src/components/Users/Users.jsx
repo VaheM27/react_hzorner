@@ -29,7 +29,7 @@ const Users = () => {
   const deleteItem = (id) => {
     setUser(user.filter((elm) => elm.id !== currentId))
     setCurrentId(null);
-    togModal()
+    togModal()  
   }
 
 
@@ -39,7 +39,7 @@ const Users = () => {
         <Modal
           togModal={togModal}
           deleteItem={deleteItem}
-          toDo={"Do you want to delete this post?"}
+          toDo={ "Do you want to delete this List?"}
           firstText={"Yes"}
           secondText={"No"}
         />
