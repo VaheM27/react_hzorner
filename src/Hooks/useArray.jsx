@@ -10,16 +10,30 @@ const useArray = ({ initialValue }) => {
   };
 
   const addFuntion = () => {
-    setAdd([...add, Math.round(Math.random() * 5)]);
+    setAdd([...add, Math.round(Math.random() * 20)]);
   };
 
   const changeSecElm = () => {
     let newArray = [...add];
-    newArray[1] = 9;
-    setAdd(newArray);
+    if (newArray > 1) {
+      newArray[1] = 9;
+      setAdd(newArray);
+    }
   };
 
-  return [add, deleteSecondElement, addFuntion, changeSecElm];
+  const clearFunction = () => {
+    setAdd([])
+  }
+
+  const setFunction = () => {
+    setAdd([1, 2])
+  }
+
+  const leaveFunction = () => {
+    setAdd(add.filter(num => num <= 4))
+  }
+
+  return [add, deleteSecondElement, addFuntion, changeSecElm, clearFunction, setFunction, leaveFunction];
 };
 
 export default useArray;
