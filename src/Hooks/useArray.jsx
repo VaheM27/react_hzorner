@@ -14,10 +14,9 @@ const useArray = ({ initialValue }) => {
   };
 
   const changeSecElm = () => {
-    let newArray = [...add];
-    if (newArray > 1) {
-      newArray[1] = 9;
-      setAdd(newArray);
+    if (add.length > 1) {
+      add[1] = 9;
+      setAdd([...add]);
     }
   };
 
