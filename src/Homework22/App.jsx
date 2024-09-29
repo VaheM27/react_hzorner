@@ -1,9 +1,8 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Mashna from '../../src/images/mashna.jpg'
-import Mashna2 from '../../src/images/mashna2.jpg'
-import Mashna3 from '../../src/images/mashna3.jpg'
-
+import Mashna from "../../src/images/mashna.jpg";
+import Mashna2 from "../../src/images/mashna2.jpg";
+import Mashna3 from "../../src/images/mashna3.jpg";
 
 import "./App.scss";
 import Slider from "react-slick";
@@ -16,7 +15,6 @@ const App = () => {
     slidesToScroll: 1,
     speed: 500,
     dots: true,
-    infinite: true,
     autoplay: true,
   };
 
@@ -27,10 +25,10 @@ const App = () => {
           <img src={Mashna} alt="" />
         </div>
         <div>
-        <img src={Mashna2} alt="" />
+          <img src={Mashna2} alt="" />
         </div>
         <div>
-        <img src={Mashna3} alt="" />
+          <img src={Mashna3} alt="" />
         </div>
       </Slider>
     </div>
