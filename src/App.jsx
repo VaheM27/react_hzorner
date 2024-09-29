@@ -1,21 +1,26 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React from 'react';
-import MarketPage from './Lesson22/MarketPage';
-import Product from "./Lesson22/components/Product/Product"
-import { useNumberList } from './Lesson24/useNumberList';
-import Number from './Lesson24/Number'
 
+import { createContext, useState } from "react";
+import One from "./Lesson25/One"
 
+export const MyContext = createContext();
 
 const App = () => {
+  const [data, setData] = useState(0);
+  const handleClick = () => {
+    setData(data + 1)
+  };
 
+  console.log(data);
   return (
-    <div className="App">
-      <Number />
-      <useNumberList />
+  <div>
+    <MyContext.Provider value={{data,handleClick}}>
+     <One data={data} function={handleClick}/> 
+      
+      </MyContext.Provider>
+  </div>
+)
 
-    </div>
-  );
 };
+
 
 export default App;
