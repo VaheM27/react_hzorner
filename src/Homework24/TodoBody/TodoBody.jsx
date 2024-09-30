@@ -2,9 +2,8 @@ import React, { useContext } from "react";
 import "./TodoBody.scss";
 import { Context } from "../App";
 
-const TodoBody = ({task}) => {
-
-    let body = useContext(Context)
+const TodoBody = ({ task }) => {
+  let body = useContext(Context);
   return (
     <ul>
       {body.task.map((item) => {
