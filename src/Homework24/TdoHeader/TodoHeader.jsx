@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../App";
 
 const TodoHeader = () => {
-
-    let header = useContext(Context)
+  let header = useContext(Context);
 
   return (
     <div>

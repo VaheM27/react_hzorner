@@ -12,7 +12,7 @@ const App = () => {
     e.preventDefault();
     const [input] = e.target;
     const data = {
-      id: nanoid (4),
+      id: nanoid(4),
       name: input.value,
     };
     if (input.value) {
@@ -27,9 +27,9 @@ const App = () => {
   };
   return (
     <div>
-      <Context.Provider value={{createTask, deleteTask, task}}>
-        <TodoHeader/>
-        <TodoBody/>
+      <Context.Provider value={{ createTask, deleteTask, task }}>
+        <TodoHeader />
+        <TodoBody />
       </Context.Provider>
     </div>
   );
