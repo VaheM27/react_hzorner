@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import Todos from "./Todos";
 import Modal from "../components/Modal/Modal";
+import { nanoid } from "nanoid";
 
 import "./App.scss";
 
@@ -13,6 +14,9 @@ const App = () => {
   const [currentId, setCurrentId] = useState(null);
 
   const addTodo = () => {
+    const data = {
+      id: nanoid(5)
+    }
     if (newTodo.trim()) {
       setTodos([...todos, newTodo]);
       setNewTodo("");
@@ -24,8 +28,6 @@ const App = () => {
 
   const getCurrent = (id) => {
     setCurrentId(id);
-    console.log(id);
-    console.log(currentId);
   };
 
   const delList = () => {

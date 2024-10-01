@@ -4,7 +4,7 @@ import { MyContext } from "./App";
 import "./Todos.scss";
 
 const Todos = () => {
-  const { todos, togModal, getCurrent } = useContext(MyContext);
+  const { todos, togModal, getCurrent,  } = useContext(MyContext);
   return (
     <div className="cont">
       {todos.map((elm, index) => {

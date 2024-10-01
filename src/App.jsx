@@ -2,7 +2,9 @@
 // import React19 from "./React19/App"
 // import SportMaster from "./SportMaster/App"
 // import React23 from "./React23/App"
-import React24 from "./React24/App"
+// import React24 from "./React24/App"
+import Weather from "./Weather/App"
+
 
 import './App.css';
 
@@ -13,7 +15,8 @@ function App() {
       {/* <React19 /> */}
       {/* <SportMaster /> */}
       {/* <React23 /> */}
-      <React24 />
+      {/* <React24 /> */}
+      <Weather />
     </div>
   );
 }
