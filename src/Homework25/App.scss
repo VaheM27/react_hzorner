@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: blueviolet;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    form {
+        input {
+            border: none;
+            border-radius: 30px;
+            padding: 15px 30px;
+        }
+    }
+}
