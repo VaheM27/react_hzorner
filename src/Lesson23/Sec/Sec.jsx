@@ -1,35 +1,40 @@
-import { useContext, useEffect, useState } from "react"
-import { context } from "../Nav/Nav"
-import axios from "axios"
-import './Sec.scss'
+import { useContext, useEffect, useState } from "react";
+import { Context } from "../Nav/Nav";
+import axios from "axios";
 
+import "./Sec.scss";
 
-const Sec = () =>{
+const Sec = () => {
+  const { city, changeFarenToC, changed } = useContext(Context);
+  const [data, setData] = useState([]);
 
-    const city = useContext(context)
-    const [data,setData] = useState([])
-    
+  useEffect(() => {
+    axios(
+      `${process.env.REACT_APP_BASE_URL}${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+    ).then((res) => setData([res.data]));
+  }, [city]);
 
-    useEffect(()=>{
-        axios(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ba8608127335c6068af01ea8e811dad7`).then(res=>setData([res.data]))
-    },[city])
+  return (
+    <div className="Sec">
+      {data.map((item) => {
+        return (
+          <div key={item.id}>
+            <h1>{item.name}</h1>
+            <img
+              src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`}
+              alt=""
+            />
+            <p>
+              {changed === "celsius"
+                ? changeFarenToC(item.main.temp).toFixed(2).concat(" C")
+                : item.main.temp.toFixed().concat(" F")}
+            </p>
+            <p>{item.weather[0].main}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
-
-    console.log(city)
-    return( 
-        <div className="Sec">
-            {data.map((item)=>{
-                return(
-                    <div key={item.id}>
-                        <h1>{item.name}</h1>
-                        <i className={item.weather[0].icon}></i>
-                        <p>{item.main.temp}</p>
-                        <p>{item.weather[0].main}</p>
-                    </div>
-                )
-            })}
-        </div>
-    )
-}
-
-export default Sec
+export default Sec;
