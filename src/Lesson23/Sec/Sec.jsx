@@ -26,7 +26,7 @@ const Sec = () => {
             />
             <p>
               {changed === "celsius"
-                ? changeFarenToC(item.main.temp).toFixed(2).concat(" C")
+                ? changeFarenToC(item.main.temp).toFixed().concat(" C")
                 : item.main.temp.toFixed().concat(" F")}
             </p>
             <p>{item.weather[0].main}</p>
