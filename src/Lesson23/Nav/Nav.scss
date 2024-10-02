@@ -1,0 +1,25 @@
+.mainNav{
+    form{
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+        background-color: rebeccapurple;
+        padding: 15px;
+        label {
+            font:
+              1rem 'Fira Sans',
+              sans-serif;
+          }
+        input{
+            padding: 15px;
+            border-radius: 25px;
+            background-color: white;
+        }
+        button{
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 25px;
+            background-color: white;
+        }
+    }
+}
