@@ -1,15 +1,16 @@
-import React, { useContext, useState } from 'react';
-import { TodoContext, TodoProvider } from './TodoContext';
-import './App.css'; 
+import React, { useContext, useState } from "react";
+import { TodoContext, TodoProvider } from "./TodoContext";
+import "./App.css";
 
 const TodoList = () => {
   const { todos, deleteTodo } = useContext(TodoContext);
+  console.log(todos);
 
   return (
     <ul className="todo-list">
-      {todos.map(todo => (
+      {todos.map((todo) => (
         <li key={todo.id} className="todo-item">
-          {todo.task} 
+          {todo.task}
           <button onClick={() => deleteTodo(todo.id)} className="delete-button">
             Delete
           </button>
@@ -20,31 +21,32 @@ const TodoList = () => {
 };
 
 const AddTodo = () => {
-  const [newTask, setNewTask] = useState('');
+  const [newTask, setNewTask] = useState("");
   const { addTodo } = useContext(TodoContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (newTask.trim()) {
       addTodo(newTask);
-      setNewTask('');
+      setNewTask("");
     }
   };
 
   return (
     <form onSubmit={handleSubmit} className="add-todo-form">
-      <input 
-        type="text" 
-        value={newTask} 
-        onChange={(e) => setNewTask(e.target.value)} 
+      <input
+        type="text"
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
         placeholder="Add a new task"
         className="todo-input"
       />
-      <button type="submit" className="add-button">Add</button>
+      <button type="submit" className="add-button">
+        Add
+      </button>
     </form>
   );
 };
-
 function App() {
   return (
     <TodoProvider>
