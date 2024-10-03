@@ -1,36 +1,65 @@
-import React, { createContext, useEffect, useState } from 'react'
 import axios from 'axios'
+import React, { useEffect, useReducer, useState } from 'react'
 
-export const Context = createContext()
+import "./App.scss"
+
+const initialState = {
+    city: "Yerevan",
+    weather: null
+}
+
+const weatherReducer = (state, action) => {
+    switch (action.type) {
+        case "setCity":
+            return { ...state, city: action.payload };
+        case "setWeather":
+            return { ...state, weather: action.payload };
+        default:
+            return state
+    }
+}
 const App = () => {
-    const [state, setState] = useState([])
+    const [state, disPatch] = useReducer(weatherReducer, initialState)
+    const [inputValue, setInputValue] = useState("")
 
+    const getWeather = () => {
+        axios(`https://api.openweathermap.org/data/2.5/weather?q=${state.city}&appid=ba8608127335c6068af01ea8e811dad7`)
+            .then((res) => {
+                disPatch({ type: "setWeather", payload: res.data })
+            })
+    }
     useEffect(() => {
-        axios(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=ba8608127335c6068af01ea8e811dad7`)
-            .then((res) => setState([res.data]))
-    }, [])
+        getWeather()
+    }, [state.city])
 
     const handleClick = (e) => {
         e.preventDefault()
-        
+        disPatch({ type: "setCity", payload: inputValue })
+        getWeather()
     }
 
-
-
     return (
-        <div>
-            <input type="text" placeholder='Search the place' />
-            <button>Chanage Place</button>
-            {state.map((item, index) => {
-                return (
-                    <div key={index}>
-                        <p>{item.name}</p>
-                        <p>{item.main.temp}</p>
-                    </div>
-                )
-            })}
+        <div className='main'>
+            <div className="navbar">
+                <input
+                    type="text"
+                    placeholder='Change Place'
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+                />
+                <button onClick={handleClick}>SEARCH</button>
+            </div>
+            {state.weather && (
+                <div className='weather'>
+                    <p>{state.weather.name}</p>
+                    <p>Tepmerature: {state.weather.main.temp}F</p>
+                    <img src="" alt="" />
+                    <p>{state.weather.weather[0].main}</p>
+                </div>
+            )}
         </div>
     )
 }
 
 export default App
+

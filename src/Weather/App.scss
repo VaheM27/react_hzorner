@@ -1,0 +1,52 @@
+body {
+    background-image: url(../assets/images/weather/clouds.webp);
+    background-size: cover;
+}
+
+.main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+
+        input,
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            outline: none;
+            opacity: .8;
+            font-size: 20px;
+            font-style: italic;
+        }
+    }
+
+    .weather {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: white, $alpha: .3);
+        border-radius: 10px;
+        padding: 20px;
+        gap: 20px;
+
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: white;
+        }
+    }
+}
