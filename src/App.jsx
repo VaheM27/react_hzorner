@@ -1,44 +1,19 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import MarketPage from './Lesson22/MarketPage';
+import Product from "./Lesson22/components/Product/Product"
+import { useNumberList } from './Lesson24/useNumberList';
+import Number from './Lesson24/Number'
 
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { addTodo, deleteTodo } from "./Lesson26/store/actions";
-import './App.css'
 
-function App() {
-  const [input, setInput] = useState("");
-  const todos = useSelector((state) => state.todos);
-  const dispatch = useDispatch();
 
-  const handleAddTodo = () => {
-    if (input.trim()) {
-      dispatch(addTodo(input));
-      setInput("");
-    }
-  };
-
-  const handleDeleteTodo = (id) => {
-    dispatch(deleteTodo(id));
-  };
+const App = () => {
 
   return (
-    <div className="container">
-      <h1>To-Do List</h1>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Add a new task..."
-      />
-      <button onClick={handleAddTodo}>Add</button>
+    <div className="App">
+      <Number />
+      <useNumberList />
 
-      <ul>
-        {todos.map((todo) => (
-          <li key={todo.id}>
-            {todo.text}
-            <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
