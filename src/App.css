@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  color: rgb(251, 246, 246);
+  width: 500px;
+  height: 60px;
+  text-align: center;
+  margin: 50px;
+  background-color: rgb(60, 60, 245);
+  box-shadow: 10px;
+  border-radius: 20px;
+  
+};
+ 
+button{
+  width: 20px;
+  height: 30px;
+  color: red;
+}
+.container{
+  color: rgb(126, 241, 241);
+  text-align: center;
+}
+body{
+  background-color: rgb(148, 147, 147);
+}

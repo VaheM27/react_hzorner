@@ -1,26 +1,46 @@
 
-import { createContext, useState } from "react";
-import One from "./Lesson25/One"
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addTodo, deleteTodo } from "./Lesson26/store/actions";
+import './App.css'
 
-export const MyContext = createContext();
+function App() {
+  const [input, setInput] = useState("");
+  const todos = useSelector((state) => state.todos);
+  const dispatch = useDispatch();
 
-const App = () => {
-  const [data, setData] = useState(0);
-  const handleClick = () => {
-    setData(data + 1)
+  const handleAddTodo = () => {
+    if (input.trim()) {
+      dispatch(addTodo(input));
+      setInput("");
+    }
   };
 
-  console.log(data);
+  const handleDeleteTodo = (id) => {
+    dispatch(deleteTodo(id));
+  };
+
   return (
-  <div>
-    <MyContext.Provider value={{data,handleClick}}>
-     <One data={data} function={handleClick}/> 
-      
-      </MyContext.Provider>
-  </div>
-)
+    <div className="container">
+      <h1>To-Do List</h1>
+      <input
+        type="text"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Add a new task..."
+      />
+      <button onClick={handleAddTodo}>Add</button>
 
-};
-
+      <ul>
+        {todos.map((todo) => (
+          <li key={todo.id}>
+            {todo.text}
+            <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export default App;
