@@ -1,21 +1,12 @@
-const initialState = {
-    name: []
-}
+const initialState = [];
 
+const todoReduce = (state = initialState, action) => {
+  switch (action.type) {
+    case "add":
+      return [...state, action.payload];
+    default:
+      return state;
+  }
+};
 
-const todoReduce = (state = initialState,action)=>{
-    switch (action.type) {
-        case 'add':
-            return {
-                ...state,
-                name: action.payload
-            }
-    
-        default:
-            return  state
-    }
-}
-
-
-
-export default todoReduce
+export default todoReduce;
