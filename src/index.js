@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-import store from "./Lesson26/store/store";
-import App from "./Lesson26/App";
+import store from "./Lesson27/store/store";
+import App from "./Lesson27/App";
 
 import "./index.css";
 
