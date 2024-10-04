@@ -3,7 +3,8 @@
 // import SportMaster from "./SportMaster/App"
 // import React23 from "./React23/App"
 // import React24 from "./React24/App"
-import Weather from "./Weather/App"
+// import Weather from "./Weather/App"
+import Redux from "./ReduxFirst/App"
 
 
 import './App.css';
@@ -16,7 +17,8 @@ function App() {
       {/* <SportMaster /> */}
       {/* <React23 /> */}
       {/* <React24 /> */}
-      <Weather />
+      {/* <Weather /> */}
+      <Redux />
     </div>
   );
 }
