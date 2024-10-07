@@ -1,25 +1,6 @@
 {
-  "posts": [
-    {
-      "id": "KvAmiF",
-      "authorName": "Arusik Tigranyan",
-      "email": "arusiktigranyan@gmail.com",
-      "topic": "Inchu eq es jamin dursy?",
-      "desc": "Uxaki\n"
-    },
-    {
-      "id": "Rgy7Bh",
-      "authorName": "Arusik Tigranyan",
-      "email": "arusiktigranyan@gmail.com",
-      "topic": "Inchu eq es jamin dursy?",
-      "desc": "Uxaki\n"
-    },
-    {
-      "id": "96v57c",
-      "authorName": "Arusik Tigranyan",
-      "email": "arusiktigranyan@gmail.com",
-      "topic": "Inchu eq es jamin dursy?",
-      "desc": "Uxaki\n"
-    }
+  "todos": [
+    { "id": 1, "title": "Learn Redux", "completed": false },
+    { "id": 2, "title": "Build a project", "completed": false }
   ]
 }

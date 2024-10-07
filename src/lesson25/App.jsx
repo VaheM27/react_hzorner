@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
@@ -31,6 +31,8 @@ const App = () => {
         dispatch({ type: "SET_WEATHER", payload: response.data });
       });
   };
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
