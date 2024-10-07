@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 const initialState = {
-  city: "",
+  city: "Yerevan",
   weather: null,
 };
 
@@ -21,7 +21,7 @@ function weatherReducer(state, action) {
 const App = () => {
   const [state, dispatch] = useReducer(weatherReducer, initialState);
   const [inputValue, setInputValue] = useState("");
-
+  console.log(state);
   const getWeather = () => {
     axios
       .get(
@@ -31,7 +31,6 @@ const App = () => {
         dispatch({ type: "SET_WEATHER", payload: response.data });
       });
   };
-
 
 
   const handleSubmit = (e) => {
