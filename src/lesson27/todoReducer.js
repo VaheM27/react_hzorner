@@ -9,7 +9,7 @@ const initialState = {
       case 'ADD':
         return {
           ...state,
-          todos: [...state.todos, { id: nanoid, title: action.payload, completed: false }]
+          todos: [...state.todos, { id: nanoid(), title: action.payload, completed: false }]
         };
       
       case 'DELETE':
