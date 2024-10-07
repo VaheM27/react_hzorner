@@ -1,84 +1,127 @@
 {
-  "products": [
+  "todos": [
     {
-      "id": 1,
-      "name": "Laptop",
-      "category": "Electronics",
-      "price": 999.99,
-      "stock": 50,
-      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08454578.png"
+      "id": "8",
+      "todo": "Bake pastries for yourself and neighbor",
+      "completed": true,
+      "userId": 198
     },
     {
-      "id": 2,
-      "name": "Smartphone",
-      "category": "Electronics",
-      "price": 599.99,
-      "stock": 100,
-      "image": "https://allcell.am/wp-content/uploads/2023/09/nnnnn-300x300.webp"
+      "id": "10",
+      "todo": "Write a thank you letter to an influential person in your life",
+      "completed": true,
+      "userId": 9
     },
     {
-      "id": 3,
-      "name": "Headphones",
-      "category": "Accessories",
-      "price": 199.99,
-      "stock": 200,
-      "image": "https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha"
+      "id": "13",
+      "todo": "Text a friend you haven't talked to in a long time",
+      "completed": true,
+      "userId": 2
     },
     {
-      "id": 4,
-      "name": "Keyboard",
-      "category": "Accessories",
-      "price": 49.99,
-      "stock": 150,
-      "image": "https://m.media-amazon.com/images/I/71pHnBCAqmL.jpg"
+      "id": "15",
+      "todo": "Buy a new house decoration",
+      "completed": true,
+      "userId": 105
     },
     {
-      "id": 5,
-      "name": "Coffee Maker",
-      "category": "Appliances",
-      "price": 89.99,
-      "stock": 80,
-      "image": "https://www.foodandwine.com/thmb/LnTHkm1k-I5P1jqH-0rLZidwgjE=/fit-in/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-Breville_BaristaPro_BES878BSS_9-0794-Russell-Kilgore-3x2-b21bb7fdbc4246a78d036318190d2c52.jpeg"
+      "id": "18",
+      "todo": "Draw and color a Mandala",
+      "completed": true,
+      "userId": 6
     },
     {
-      "id": 6,
-      "name": "Microwave",
-      "category": "Appliances",
-      "price": 129.99,
-      "stock": 60,
-      "image": "https://hips.hearstapps.com/hmg-prod/images/wu4719microwavewithgrill-01-pcm155026-1574424415.jpg"
+      "id": "19",
+      "todo": "Create a cookbook with favorite recipes",
+      "completed": true,
+      "userId": 53
     },
     {
-      "id": 7,
-      "name": "Desk Chair",
-      "category": "Furniture",
-      "price": 149.99,
-      "stock": 40,
-      "image": "https://img-us.aosomcdn.com/thumbnail/100/n0/product/2023/05/04/2HF98a187e52eb325.jpg"
+      "id": "20",
+      "todo": "Bake a pie with some friends",
+      "completed": true,
+      "userId": 162
     },
     {
-      "id": 8,
-      "name": "Office Desk",
-      "category": "Furniture",
-      "price": 299.99,
-      "stock": 30,
-      "image": "https://i5.walmartimages.com/seo/Tribesigns-70-8-Large-Executive-Office-Desk-with-Lateral-File-Cabinet-L-Shaped-Computer-Desk-with-Drawers-and-Storage-Home-Office-Furniture-Sets_3b7d3c5c-1a64-41fe-91e6-6efbe15795ed.f1ae63aed0821067c87846af02f689fd.jpeg"
+      "id": "21",
+      "todo": "Create a compost pile",
+      "completed": false,
+      "userId": 13
     },
     {
-      "id": 9,
-      "name": "LED TV",
-      "category": "Electronics",
-      "price": 399.99,
-      "stock": 25,
-      "image": "https://m.media-amazon.com/images/I/71jU54Q6ChL.jpg"
+      "id": "22",
+      "todo": "Take a hike at a local park",
+      "completed": true,
+      "userId": 37
     },
     {
-      "id": 10,
-      "name": "Smartwatch",
-      "category": "Electronics",
-      "price": 249.99,
-      "stock": 75,
-      "image": "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad/images/S300847346_1?1725018393"
+      "id": "23",
+      "todo": "Take a class at local community center that interests you",
+      "completed": true,
+      "userId": 65
+    },
+    {
+      "id": "25",
+      "todo": "Plan a trip to another country",
+      "completed": false,
+      "userId": 140
+    },
+    {
+      "id": "26",
+      "todo": "Improve touch typing",
+      "completed": false,
+      "userId": 178
+    },
+    {
+      "id": "27",
+      "todo": "Learn Express.js",
+      "completed": false,
+      "userId": 194
+    },
+    {
+      "id": "28",
+      "todo": "Learn calligraphy",
+      "completed": false,
+      "userId": 80
+    },
+    {
+      "id": "30",
+      "todo": "Go to the gym",
+      "completed": true,
+      "userId": 142
+    },
+    {
+      "id": "aU9h",
+      "todo": "priveeeetttt",
+      "complated": false
+    },
+    {
+      "id": "mm9i",
+      "todo": "helooooo",
+      "complated": false
+    },
+    {
+      "id": "OCfu",
+      "todo": "gnfgn",
+      "complated": false
+    },
+    {
+      "id": "0yIN",
+      "todo": "baylus",
+      "complated": false
+    },
+    {
+      "id": "rZOR",
+      "todo": "barevdzez",
+      "complated": false
+    },
+    {
+      "id": "Cqio",
+      "todo": "helloo",
+      "complated": false
     }
-  ]
+  ],
+  "total": 254,
+  "skip": 0,
+  "limit": 30
 }

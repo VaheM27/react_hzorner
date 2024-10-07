@@ -1,0 +1,71 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    .data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 25px;
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .items {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            display: flex;
+            gap: 25px;
+            justify-content: space-around;
+            border: 2px solid gray;
+            border-radius: 25px;
+            padding: 15px 20px;
+            max-width: 500px;
+            width: 100%;
+
+            p {
+                color: gray;
+                font-size: 15px;
+                font-weight: 900;
+            }
+
+            p:last-child {
+                color: red;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    form {
+        column-gap: 25px;
+        display: flex;
+        justify-content: center;
+
+        input {
+            padding: 15px 20px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            color: gray;
+            cursor: pointer;
+        }
+    }
+}
