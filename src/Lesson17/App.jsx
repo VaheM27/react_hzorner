@@ -25,12 +25,7 @@ const App = () => {
       //     _start: 50,
       //   },
       // })
-      instance(option, {
-        params: {
-          _limit: 10,
-          _start: 50,
-        },
-      }).then((res) => setInfo(res.data));
+      instance(option).then((res) => setInfo(res.data));
     };
     getData();
   }, [option]);
